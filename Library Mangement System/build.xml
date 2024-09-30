@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Library_Management_System" default="test-with-coverage" basedir="." xmlns:jacoco="antlib:org.jacoco.ant">
+    <description>Builds, tests, and runs the project Library Management System.</description>
+
+    <property name="build.dir" value="build"/>
+    <property name="src.dir" value="src"/>
+    <property name="test.dir" value="test"/>
+    <property name="jacoco.dir" value="/Users/sithumwejesinghe/Desktop/jacoco-0.8.13/lib"/>
+    <property name="jacoco.agent" value="${jacoco.dir}/jacocoagent.jar"/>
+    <property name="jacoco.exec" value="${build.dir}/jacoco.exec"/>
+    <property name="jacoco.report.dir" value="${build.dir}/reports/jacoco"/>
+
+    <taskdef name="jacoco" classname="org.jacoco.ant.Task" classpath="${jacoco.dir}/jacocoant.jar"/>
+
+    <target name="compile">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}"/>
+    </target>
+
+    <target name="test-with-coverage" depends="compile">
+        <!-- Run tests with JaCoCo agent for instrumentation -->
+        <junit printsummary="true" fork="true">
+            <jvmarg value="-javaagent:${jacoco.agent}=destfile=${jacoco.exec}"/>
+            <batchtest>
+                <fileset dir="${test.dir}">
+                    <include name="**/*Test.java"/>
+                </fileset>
+            </batchtest>
+            <formatter type="plain"/>
+        </junit>
+
+        <!-- Generate HTML report -->
+        <jacoco:report>
+            <executiondata>
+                <file file="${jacoco.exec}"/>
+            </executiondata>
+            <structure name="Library Management System">
+                <classfiles>
+                    <fileset dir="${build.dir}"/>
+                </classfiles>
+                <sourcefiles encoding="UTF-8">
+                    <fileset dir="${src.dir}"/>
+                </sourcefiles>
+            </structure>
+            <html destdir="${jacoco.report.dir}"/>
+        </jacoco:report>
+    </target>
+</project>
