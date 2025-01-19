@@ -23,13 +23,6 @@ Programming Language: Java
 Testing Framework: JUnit
 Database: MySQL (or specify the database used)
 
-How to Run the Project
 
-Clone the repository to your local system.
-Set up the database using the provided SQL scripts.
-Import the project into your preferred IDE (e.g., IntelliJ IDEA, Eclipse).
-Run the application.
-Execute the JUnit test cases to verify functionality.
 
-Team Members
 
