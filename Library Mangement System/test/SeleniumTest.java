@@ -10,7 +10,7 @@ public class SeleniumTest {
     @Before
     public void setUp() {
         // Set the path to the ChromeDriver executable
-        System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/C:\Users\Shashini anuththara\Downloads\chromedriver_win32");
 
         // Initialize the ChromeDriver
         driver = new ChromeDriver();
@@ -23,7 +23,7 @@ public class SeleniumTest {
 
         // Check the title
         String title = driver.getTitle();
-        assert title.equals("Google") : "Title should be Google";
+        assert title.equals("Google"): "Title should be Google";
     }
 
     @After
