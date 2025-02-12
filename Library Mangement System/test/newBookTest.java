@@ -11,9 +11,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 
-public class newBookTest {
+public class NewBookTest {
     
-    public newBookTest() {
+    public NewBookTest() {
     }
     
     @BeforeClass
@@ -39,7 +39,7 @@ public class newBookTest {
     public void testMain() {
         System.out.println("main");
         String[] args = null;
-        newBook.main(args);
+        NewBook.main(args);
         // TODO review the generated test code and remove the default call to fail.
        
     }
@@ -50,7 +50,7 @@ public class newBookTest {
     @Test
     public void testGetBookID() {
         System.out.println("getBookID");
-        newBook instance = new newBook();
+        NewBook instance = new NewBook();
         String expResult = "";
         String result = instance.getBookID();
         assertEquals(expResult, result);
@@ -64,7 +64,7 @@ public class newBookTest {
     @Test
     public void testGetName() {
         System.out.println("getName");
-        newBook instance = new newBook();
+        NewBook instance = new NewBook();
         String expResult = "";
         String result = instance.getName();
         assertEquals(expResult, result);
@@ -78,7 +78,7 @@ public class newBookTest {
     @Test
     public void testGetAuthor() {
         System.out.println("getAuthor");
-        newBook instance = new newBook();
+        NewBook instance = new NewBook();
         String expResult = "";
         String result = instance.getAuthor();
         assertEquals(expResult, result);
@@ -90,11 +90,11 @@ public class newBookTest {
      * Test of getPublishedYear method, of class newBook.
      */
     @Test
-    public void testGetPublishedYear() {
-        System.out.println("getPublishedYear");
-        newBook instance = new newBook();
+    public void testGetCategory() {
+        System.out.println("getCategory");
+        NewBook instance = new NewBook();
         String expResult = "";
-        String result = instance.getPublishedYear();
+        String result = instance.getCategory();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
        
@@ -103,15 +103,7 @@ public class newBookTest {
     /**
      * Test of getPrice method, of class newBook.
      */
-    @Test
-    public void testGetPrice() {
-        System.out.println("getPrice");
-        newBook instance = new newBook();
-        String expResult = "";
-        String result = instance.getPrice();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-       
-    }
+  
+    
     
 }

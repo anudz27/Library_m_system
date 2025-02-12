@@ -7,11 +7,11 @@ import static org.junit.Assert.*;
 
 
 
-public class loginTest {
+public class logInTest {
     
-    private login loginForm;
+    private logIn loginForm;
 
-    public loginTest() {
+    public logInTest() {
     }
     
     @BeforeClass
@@ -27,7 +27,7 @@ public class loginTest {
     @Before
     public void setUp() {
         // This will run before each test method
-        loginForm = new login();  // Initialize the login form
+        loginForm = new logIn();  // Initialize the login form
     }
     
     @After
@@ -54,4 +54,3 @@ public class loginTest {
         assertTrue("Login form should remain visible after failed login", loginForm.isVisible());
     }
 }
-

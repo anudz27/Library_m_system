@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Library Management System">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/RSFoto_v1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/RSCalendar.jar!/" />
+      <root url="jar://$PROJECT_DIR$/RojeruSan.parte1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mysql-connector-j-9.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

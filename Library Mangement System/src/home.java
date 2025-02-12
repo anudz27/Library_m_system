@@ -1,13 +1,11 @@
-
-import javax.swing.JFrame;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
+
 /**
  *
- * @author Mohamed Jarshan
+ * @author Shashini anuththara
  */
 public class home extends javax.swing.JFrame {
 
@@ -16,7 +14,6 @@ public class home extends javax.swing.JFrame {
      */
     public home() {
         initComponents();
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
@@ -28,120 +25,159 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        rSMaterialButtonRectangle1 = new rojerusan.RSMaterialButtonRectangle();
+        rSMaterialButtonRectangle2 = new rojerusan.RSMaterialButtonRectangle();
+        rSMaterialButtonRectangle3 = new rojerusan.RSMaterialButtonRectangle();
+        rSMaterialButtonRectangle4 = new rojerusan.RSMaterialButtonRectangle();
+        rSMaterialButtonRectangle5 = new rojerusan.RSMaterialButtonRectangle();
+        rSMaterialButtonRectangle6 = new rojerusan.RSMaterialButtonRectangle();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(255, 0, 255));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setText("New Student");
-        jButton1.setPreferredSize(new java.awt.Dimension(159, 59));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 0, 0));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("LIBRARY MANAGEMENT SYSTEM");
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("DASHBOARD");
+
+        rSMaterialButtonRectangle1.setText("NEW BOOK");
+        rSMaterialButtonRectangle1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                rSMaterialButtonRectangle1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 18, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(255, 0, 255));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton2.setText("New Book");
-        jButton2.setPreferredSize(new java.awt.Dimension(159, 59));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        rSMaterialButtonRectangle2.setText("NEW STUDENT");
+        rSMaterialButtonRectangle2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                rSMaterialButtonRectangle2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 18, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(255, 0, 255));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton3.setText("Statistics");
-        jButton3.setPreferredSize(new java.awt.Dimension(159, 59));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        rSMaterialButtonRectangle3.setBackground(new java.awt.Color(0, 153, 153));
+        rSMaterialButtonRectangle3.setText("ISSUE BOOK");
+        rSMaterialButtonRectangle3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                rSMaterialButtonRectangle3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(573, 18, -1, -1));
 
-        jButton4.setBackground(new java.awt.Color(255, 0, 255));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton4.setText("Issue Book");
-        jButton4.setPreferredSize(new java.awt.Dimension(159, 59));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        rSMaterialButtonRectangle4.setBackground(new java.awt.Color(0, 153, 153));
+        rSMaterialButtonRectangle4.setText("RETURN BOOK");
+        rSMaterialButtonRectangle4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                rSMaterialButtonRectangle4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(838, 18, -1, -1));
 
-        jButton5.setBackground(new java.awt.Color(255, 0, 255));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setText("Return Book");
-        jButton5.setPreferredSize(new java.awt.Dimension(159, 59));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        rSMaterialButtonRectangle5.setBackground(new java.awt.Color(0, 102, 102));
+        rSMaterialButtonRectangle5.setText("LOG OUT");
+        rSMaterialButtonRectangle5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                rSMaterialButtonRectangle5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 18, -1, -1));
 
-        jButton6.setBackground(new java.awt.Color(255, 0, 255));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton6.setText("Logout");
-        jButton6.setPreferredSize(new java.awt.Dimension(159, 59));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        rSMaterialButtonRectangle6.setBackground(new java.awt.Color(0, 102, 102));
+        rSMaterialButtonRectangle6.setText("STATISTICS");
+        rSMaterialButtonRectangle6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                rSMaterialButtonRectangle6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1375, 18, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/library5.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 435, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(165, 165, 165))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 51, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rSMaterialButtonRectangle1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSMaterialButtonRectangle3, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSMaterialButtonRectangle6, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(100, 100, 100)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rSMaterialButtonRectangle4, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSMaterialButtonRectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSMaterialButtonRectangle5, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(135, 135, 135))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rSMaterialButtonRectangle1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMaterialButtonRectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rSMaterialButtonRectangle3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMaterialButtonRectangle4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rSMaterialButtonRectangle5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMaterialButtonRectangle6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void rSMaterialButtonRectangle1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle1ActionPerformed
         // TODO add your handling code here:
-        new newStudent().setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+        NewBook bk = new NewBook ();
+        bk.setVisible(true);
+    }//GEN-LAST:event_rSMaterialButtonRectangle1ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void rSMaterialButtonRectangle5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle5ActionPerformed
         // TODO add your handling code here:
-        setVisible(false);
-        new login().setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
+       this.dispose();
+    }//GEN-LAST:event_rSMaterialButtonRectangle5ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void rSMaterialButtonRectangle2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle2ActionPerformed
         // TODO add your handling code here:
-        new newBook().setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+         newStudent st = new newStudent();
+         st.setVisible(true);
+    }//GEN-LAST:event_rSMaterialButtonRectangle2ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void rSMaterialButtonRectangle4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle4ActionPerformed
         // TODO add your handling code here:
-        new issueBook().setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
+         returnBook st = new returnBook();
+         st.setVisible(true);
+    }//GEN-LAST:event_rSMaterialButtonRectangle4ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void rSMaterialButtonRectangle3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle3ActionPerformed
         // TODO add your handling code here:
-        new returnBook().setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
+        IssueBook st = new IssueBook();
+         st.setVisible(true);
+    }//GEN-LAST:event_rSMaterialButtonRectangle3ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void rSMaterialButtonRectangle6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle6ActionPerformed
         // TODO add your handling code here:
-        new statistics().setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+        Statistics st = new Statistics();
+         st.setVisible(true);
+    }//GEN-LAST:event_rSMaterialButtonRectangle6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,39 +213,36 @@ public class home extends javax.swing.JFrame {
             }
         });
     }
-
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
-    // End of variables declaration//GEN-END:variables
-public javax.swing.JButton getNewStudentButton() {
-    return jButton1;
+public javax.swing.JButton getNewStudentBookButton() {
+    return rSMaterialButtonRectangle2;
 }
-
 public javax.swing.JButton getNewBookButton() {
-    return jButton2;
+    return rSMaterialButtonRectangle1;
 }
 
 public javax.swing.JButton getStatisticsButton() {
-    return jButton3;
+    return rSMaterialButtonRectangle6;
 }
 
 public javax.swing.JButton getIssueBookButton() {
-    return jButton4;
+    return rSMaterialButtonRectangle3;
 }
 
 public javax.swing.JButton getReturnBookButton() {
-    return jButton5;
+    return rSMaterialButtonRectangle4;
 }
 
 public javax.swing.JButton getLogoutButton() {
-    return jButton6;
+    return rSMaterialButtonRectangle5;
 }
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel4;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle1;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle2;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle3;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle4;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle5;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle6;
+    // End of variables declaration//GEN-END:variables
 }
-

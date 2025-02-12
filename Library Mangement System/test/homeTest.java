@@ -19,7 +19,7 @@ public class homeTest {
 
     @Test
     public void testNewStudentButton() {
-        JButton newStudentButton = homeFrame.getNewStudentButton();
+        JButton newStudentButton = homeFrame.getNewStudentBookButton();
         assertNotNull("New Student button should not be null", newStudentButton);
         
         // Simulate a button click
@@ -84,6 +84,3 @@ public class homeTest {
         // Add assertions for expected outcomes
     }
 }
-
-
-

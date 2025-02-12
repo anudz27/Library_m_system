@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author sithumwejesinghe
+ * @author Shashini anuththara
  */
 public class newStudentTest {
     
@@ -44,7 +44,7 @@ public class newStudentTest {
         String[] args = null;
         newStudent.main(args);
         // TODO review the generated test code and remove the default call to fail.
-       
+        fail("The test case is a prototype.");
     }
     
 }
