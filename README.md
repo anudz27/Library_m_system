@@ -25,8 +25,6 @@ Our team focused on **ensuring platform reliability and functionality** through 
 
 🔹 **JUnit Testing** – Designed and executed test cases using **JUnit**.  
 🔹 **Functional Testing** – Verified that all features **work as expected**.  
-🔹 **Security Testing** – Ensured **sensitive data is securely managed**.  
-🔹 **Performance Testing** – Evaluated the platform’s **efficiency under various scenarios**.  
 
 ---
 
